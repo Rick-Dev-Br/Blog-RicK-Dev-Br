@@ -24,6 +24,7 @@ section .container  {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 
@@ -46,8 +47,8 @@ section h2 {
 }
 
 .container img {
-max-width: 355px;
-max-height: 300px;
+max-width: 355PX;
+max-height: 300PX;
 }
 
 .container {
@@ -111,7 +112,7 @@ button {
     font-family: "Saira Stencil One", serif;
     display: block; 
     width: 440px;
-    border: 1px ridge rgb(255,165,0);
+    border: 1% ridge rgb(255,165,0);
 }
 
 form button {
@@ -140,3 +141,4 @@ footer {
     font-family: "Saira Stencil One", serif;
     margin-top: 18px;
 }
+
