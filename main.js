@@ -1,1 +1,1 @@
-alert('Bem vindo');
+
