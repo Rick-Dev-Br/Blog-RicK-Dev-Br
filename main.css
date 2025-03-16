@@ -46,19 +46,33 @@ section h2 {
     font-family: "Bungee Spice", serif;
 }
 
-.container img {
-max-width: 355PX;
-max-height: 300PX;
+.zoom-pai {
+    width: 355px ; /* Largura do contêiner */
 }
 
 
-header .container {
+.zoom-pai img {
+width: 100%; /* Faz a imagem ocupar 100% do contêiner */
+transition: transform 0.3s ease; /* Adiciona uma transição suave */
+cursor: pointer; /* Muda o cursor para indicar que a imagem é clicável */
+}
+
+#zoom-section img {
+    max-width: 355PX;
+    max-height: 300PX;
+}
+
+/* Estilo da imagem com zoom */
+.zoom-pai img.zoomed {
+    transform: scale(2); /* Aumenta a imagem em 2x */
+}
+
+.container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-between;
     max-width: 1280px;
-    width:100%;
-    margin:0 auto;
+    width: 100%;
 }
 
 section .container p {
@@ -120,15 +134,12 @@ form button {
 }
 
 section h3 {
-    font-family: "Bungee Spice", serif;
-    
+    font-family: "Bungee Spice", serif; 
 }
 
 form textarea {
     resize: none;
     height: 150px;
-    
-    
 }
 
 input:focus, textarea:focus {
@@ -140,7 +151,3 @@ footer {
     margin-top: 18px;
 }
 
-#zoom-1 {
-    width: 355px 300px;
-    overflow: hidden;
-}
