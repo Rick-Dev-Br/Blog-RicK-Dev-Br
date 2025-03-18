@@ -72,8 +72,38 @@ border-style: dashed;
     transform: translate(-50%, -50%) scale(1); /* Centraliza e aplica o zoom */
     z-index: 1000; /* Garante que a imagem fique acima de outros elementos */
     max-width: 90vw; /* Limita o tamanho máximo da imagem */
+    max-height: 90vh;   
+}
+
+#zoom-section img.zoomed {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1); /* Centraliza e aplica o zoom */
+    z-index: 1000; /* Garante que a imagem fique acima de outros elementos */
+    max-width: 90vw; /* Limita o tamanho máximo da imagem */
     max-height: 90vh;
-    
+}
+
+#zoom-section ul li {
+    max-width: 100%;
+    list-style: none;
+    position: relative;
+    overflow-y: hidden ;   
+}
+
+.zoom-pai ul  {
+font-family:"Bungee Spice", serif; 
+margin-bottom: 15px;    
+}
+
+.zoom-pai ul li {
+    max-width: 100%;
+    list-style: none;
+    position: relative;
+    overflow-y: hidden ;  
+    display: flex;
+    flex-wrap: wrap; 
 }
 
 .container {
@@ -151,6 +181,6 @@ footer {
 }
 
 .rick {
-    margin-right: 625px;
+    margin-right: 660px;
 }
 
