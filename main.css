@@ -47,7 +47,12 @@ section h2 {
     font-family: "Bungee Spice", serif;
 }
 
+section h3 {
+    margin-left: 30px;
+}
+
 .zoom-pai {
+    position: relative; 
     width: 355px ; /* Largura do contêiner */
 }
 
@@ -89,7 +94,7 @@ border-style: dashed;
     max-width: 100%;
     list-style: none;
     position: relative;
-    overflow-y: hidden ;   
+    overflow-y: hidden ; 
 }
 
 .zoom-pai ul  {

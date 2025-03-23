@@ -6,6 +6,7 @@ $(function() {
 $('#zoom-1').on('click', function() {
     console.log('imagem clicada');
   $(this).toggleClass('zoomed');
+
 });
   // Seleciona a imagem pelo ID
   $('#zoom-2').on('click', function() { // $ chama o documento html. O .on é msm coisa que o addeventlistener.
@@ -21,5 +22,13 @@ $('#imagem-naruto').on('click', function() {
 
 $('#resident-evil').on('click', function() {
   $(this).toggleClass('zoomed');
+});
+
+$('#chainsaw-man').on('click', function() {
+  $(this).toggleClass('zoomed')
+});
+
+$('#skyrim').on('click', function(){
+  $(this).toggleClass('zoomed')
 });
 
